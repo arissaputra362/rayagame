@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://UserInterface/PlayButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://UserInterface/Title.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Resource/Backgroud/konsep 1.png" type="Texture" id=3]
+[ext_resource path="res://Resource/font_title.tres" type="DynamicFont" id=4]
+[ext_resource path="res://UserInterface/QuitButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Resource/ui_theme.tres" type="Theme" id=6]
+[ext_resource path="res://Resource/music/Lost-Jungle_Looping.wav" type="AudioStream" id=7]
+
+[node name="MainScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" parent="." instance=ExtResource( 2 )]
+margin_left = -145.5
+margin_top = 168.308
+margin_right = 143.5
+margin_bottom = 225.308
+custom_fonts/font = ExtResource( 4 )
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -158.0
+margin_top = -66.0
+margin_right = 159.0
+margin_bottom = 69.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" parent="Menu" instance=ExtResource( 1 )]
+margin_right = 317.0
+margin_bottom = 63.0
+
+[node name="QuitButton" parent="Menu" instance=ExtResource( 5 )]
+margin_top = 71.0
+margin_bottom = 135.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true

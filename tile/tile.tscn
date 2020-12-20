@@ -1,0 +1,247 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Resource/bagianb.png" type="Texture" id=1]
+[ext_resource path="res://Resource/rumput2.png" type="Texture" id=2]
+[ext_resource path="res://Resource/bagianb2.png" type="Texture" id=3]
+[ext_resource path="res://Resource/batu2.png" type="Texture" id=4]
+[ext_resource path="res://Resource/rumput1.png" type="Texture" id=5]
+[ext_resource path="res://Resource/pohon1.png" type="Texture" id=6]
+[ext_resource path="res://Resource/batu1.png" type="Texture" id=7]
+[ext_resource path="res://Resource/ground3.png" type="Texture" id=8]
+[ext_resource path="res://Resource/ground1.png" type="Texture" id=9]
+[ext_resource path="res://Resource/ground2.png" type="Texture" id=10]
+[ext_resource path="res://Resource/point.png" type="Texture" id=11]
+[ext_resource path="res://Resource/ground4.png" type="Texture" id=12]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 258.526, 229.053 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 343.686, 151.043 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 323.139, 198.966 )
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 163.249
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 202.322, 1011.09 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 568.708, 439.91 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 390.679, 397.929 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 276.948, 162.313 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 184.184, 148.015 )
+
+[sub_resource type="CircleShape2D" id=10]
+radius = 191.668
+
+[node name="calonworld" type="Node2D"]
+position = Vector2( -0.353554, 0.530331 )
+
+[node name="batu1" type="Sprite" parent="."]
+position = Vector2( 312.601, 560.494 )
+scale = Vector2( 0.248473, 0.346388 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="batu1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="batu1/StaticBody2D"]
+self_modulate = Color( 0.0470588, 0.862745, 0.972549, 1 )
+position = Vector2( 100.409, 52.3259 )
+one_way_collision = true
+
+[node name="rumput2" type="Sprite" parent="."]
+position = Vector2( 432.79, 220.846 )
+scale = Vector2( 0.643569, 0.850992 )
+texture = ExtResource( 5 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rumput2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rumput2/StaticBody2D"]
+visible = false
+self_modulate = Color( 0.0470588, 0.862745, 0.972549, 1 )
+one_way_collision = true
+
+[node name="rumput1" type="Sprite" parent="."]
+position = Vector2( 215.38, 311.629 )
+scale = Vector2( 0.435881, 0.533648 )
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rumput1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rumput1/StaticBody2D"]
+self_modulate = Color( 0.0470588, 0.862745, 0.972549, 1 )
+position = Vector2( 22.2236, 3.17474 )
+one_way_collision = true
+
+[node name="tanah" type="Sprite" parent="."]
+position = Vector2( 799.451, 307.376 )
+scale = Vector2( 0.253482, 0.255376 )
+texture = ExtResource( 8 )
+hframes = 3
+
+[node name="StaticBody2D" type="StaticBody2D" parent="tanah"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tanah/StaticBody2D"]
+self_modulate = Color( 0.0470588, 0.862745, 0.972549, 1 )
+position = Vector2( 1.58105, 3.18896 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="tanah3" type="Sprite" parent="."]
+position = Vector2( 1026.1, 245.794 )
+scale = Vector2( 0.170549, 0.200339 )
+texture = ExtResource( 8 )
+hframes = 3
+frame = 2
+
+[node name="StaticBody2D" type="StaticBody2D" parent="tanah3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tanah3/StaticBody2D"]
+self_modulate = Color( 0.0470588, 0.862745, 0.972549, 1 )
+position = Vector2( 1.58105, 3.18896 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="tanah4" type="Sprite" parent="."]
+position = Vector2( 815.267, 129.253 )
+scale = Vector2( 0.345171, 0.231576 )
+texture = ExtResource( 9 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="tanah4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tanah4/StaticBody2D"]
+self_modulate = Color( 0.0470588, 0.862745, 0.972549, 1 )
+position = Vector2( 1.58105, 3.18896 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="tanah5" type="Sprite" parent="."]
+position = Vector2( 168.994, 116.54 )
+scale = Vector2( 0.345171, 0.231576 )
+texture = ExtResource( 10 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="tanah5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tanah5/StaticBody2D"]
+self_modulate = Color( 0.0470588, 0.862745, 0.972549, 1 )
+position = Vector2( 12.7615, -13.1329 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="tanah5/StaticBody2D"]
+self_modulate = Color( 0.0470588, 0.862745, 0.972549, 1 )
+position = Vector2( -239.098, -51.2174 )
+shape = SubResource( 4 )
+
+[node name="tanah2" type="Sprite" parent="."]
+position = Vector2( 946.687, 481.028 )
+scale = Vector2( 0.170549, 0.200339 )
+texture = ExtResource( 8 )
+hframes = 3
+frame = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="tanah2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tanah2/StaticBody2D"]
+self_modulate = Color( 0.0470588, 0.862745, 0.972549, 1 )
+position = Vector2( 1.58105, 3.18896 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="pohon" type="Sprite" parent="."]
+position = Vector2( 103.103, 493.414 )
+scale = Vector2( 0.0725192, 0.108956 )
+texture = ExtResource( 6 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pohon"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pohon/StaticBody2D"]
+
+[node name="pohonbatas" type="Sprite" parent="."]
+position = Vector2( 1112.85, 439.674 )
+scale = Vector2( 0.0725192, 0.108956 )
+texture = ExtResource( 6 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pohonbatas"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pohonbatas/StaticBody2D"]
+position = Vector2( -156.011, 75.3618 )
+shape = SubResource( 5 )
+
+[node name="tanahterbang1" type="Sprite" parent="."]
+position = Vector2( 1003.71, 638.762 )
+scale = Vector2( 0.0769397, 0.0561575 )
+texture = ExtResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="tanahterbang1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tanahterbang1/StaticBody2D"]
+position = Vector2( 6.13281, -8.4043 )
+shape = SubResource( 6 )
+
+[node name="tanahterbang2" type="Sprite" parent="."]
+position = Vector2( 604.315, 501.431 )
+scale = Vector2( 0.0769397, 0.0561575 )
+texture = ExtResource( 3 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="tanahterbang2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tanahterbang2/StaticBody2D"]
+position = Vector2( -19.3203, 21.1758 )
+shape = SubResource( 7 )
+
+[node name="batutinggi" type="Sprite" parent="."]
+position = Vector2( 736.584, 550.525 )
+scale = Vector2( 0.321711, 0.253033 )
+texture = ExtResource( 7 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="batutinggi"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="batutinggi/StaticBody2D"]
+position = Vector2( 0, 6.60266 )
+one_way_collision = true
+
+[node name="titik" type="Sprite" parent="."]
+position = Vector2( 593.496, 587.983 )
+scale = Vector2( 0.452516, 0.38888 )
+texture = ExtResource( 11 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="titik"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="titik/StaticBody2D"]
+position = Vector2( 0, 6.60266 )
+one_way_collision = true
+
+[node name="ground" type="Sprite" parent="."]
+position = Vector2( 469.661, 422.276 )
+scale = Vector2( 0.223975, 0.190903 )
+texture = ExtResource( 12 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ground"]
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="ground/StaticBody2D"]
+position = Vector2( -340.558, 181.912 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="ground/StaticBody2D"]
+position = Vector2( -157.702, 53.0288 )
+rotation = -0.541052
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="ground/StaticBody2D"]
+position = Vector2( 365.98, -69.2825 )
+rotation = 0.404916
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="ground/StaticBody2D"]
+position = Vector2( 146.477, -97.0056 )
+rotation = 0.404916
+shape = SubResource( 10 )

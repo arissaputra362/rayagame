@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="Title" type="Label"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -37.5
+margin_top = 176.308
+margin_right = 37.5
+margin_bottom = 190.308
+text = "Raya Game "
+__meta__ = {
+"_edit_use_anchors_": false
+}

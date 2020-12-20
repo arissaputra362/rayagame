@@ -1,0 +1,105 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Resource/bagianb.png" type="Texture" id=2]
+[ext_resource path="res://Resource/bagianb2.png" type="Texture" id=3]
+[ext_resource path="res://Resource/lekuk luar.png" type="Texture" id=4]
+[ext_resource path="res://Resource/tembok dalam.png" type="Texture" id=5]
+[ext_resource path="res://Resource/lekuk dalam.png" type="Texture" id=6]
+[ext_resource path="res://Resource/Lurus.png" type="Texture" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 248.104, 154.505 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 455.896, 414.916 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 219.408, 503.644 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 247.222, 220.226 )
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 172.387
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 221.386, 205.296 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 238.687, 321.723 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="pembatas2" type="Sprite" parent="."]
+position = Vector2( 623.331, 558.619 )
+scale = Vector2( 1, 0.614305 )
+texture = ExtResource( 2 )
+vframes = 3
+hframes = 3
+frame = 4
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pembatas2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pembatas2/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="pembatas3" type="Sprite" parent="."]
+position = Vector2( 1041.94, 164.053 )
+scale = Vector2( 0.153353, 0.113842 )
+texture = ExtResource( 3 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pembatas3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pembatas3/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="pembatas4" type="Sprite" parent="."]
+position = Vector2( 984.626, 529.976 )
+scale = Vector2( 0.153353, 0.113842 )
+texture = ExtResource( 6 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pembatas4"]
+position = Vector2( -186.113, -219.369 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pembatas4/StaticBody2D"]
+position = Vector2( -65.0684, 216.639 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="pembatas4/StaticBody2D"]
+position = Vector2( 398.708, -57.9976 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="pembatas4/StaticBody2D"]
+position = Vector2( 160.629, 137.217 )
+shape = SubResource( 5 )
+
+[node name="pembatas5" type="Sprite" parent="."]
+position = Vector2( 224.786, 532.221 )
+scale = Vector2( 0.153353, 0.113842 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pembatas5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pembatas5/StaticBody2D"]
+position = Vector2( -34.5432, -37.2251 )
+shape = SubResource( 6 )
+
+[node name="pembatas6" type="Sprite" parent="."]
+position = Vector2( 258.46, 639.977 )
+scale = Vector2( 0.153353, 0.113842 )
+texture = ExtResource( 5 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pembatas6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pembatas6/StaticBody2D"]
+
+[node name="pembatas7" type="Sprite" parent="."]
+position = Vector2( 1059.9, 345.892 )
+scale = Vector2( 0.153353, 0.113842 )
+texture = ExtResource( 7 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="pembatas7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pembatas7/StaticBody2D"]
+position = Vector2( -19.5405, 0 )
+shape = SubResource( 7 )

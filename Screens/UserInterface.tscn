@@ -1,0 +1,97 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Resource/font_title.tres" type="DynamicFont" id=1]
+[ext_resource path="res://UserInterface/Title.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UserInterface/QuitButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UserInterface/PlayButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Resource/ui_theme.tres" type="Theme" id=5]
+[ext_resource path="res://Screens/UserInterface.gd" type="Script" id=6]
+[ext_resource path="res://UserInterface/RetryButton.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Resource/music/mixkit-game-over-trombone-1940.wav" type="AudioStream" id=8]
+
+[node name="UserInterface" type="Control"]
+pause_mode = 2
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -640.0
+margin_top = -360.0
+margin_right = 640.0
+margin_bottom = 360.0
+theme = ExtResource( 5 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -189.831
+margin_top = 23.9729
+margin_right = -52.8306
+margin_bottom = 54.9729
+text = "Score %s"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="PauseOverlay" type="ColorRect" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -640.0
+margin_top = -360.0
+margin_right = 640.0
+margin_bottom = 360.0
+color = Color( 0.0588235, 0.0588235, 0.0588235, 0.141176 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" parent="PauseOverlay" instance=ExtResource( 2 )]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -186.564
+margin_top = -160.353
+margin_right = 179.436
+margin_bottom = -103.353
+custom_fonts/font = ExtResource( 1 )
+text = "Paused"
+align = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseOverlay"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -170.0
+margin_top = -80.567
+margin_right = 172.0
+margin_bottom = 148.433
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RetryButton" parent="PauseOverlay/VBoxContainer" instance=ExtResource( 7 )]
+margin_right = 342.0
+margin_bottom = 71.0
+
+[node name="SceneButton" parent="PauseOverlay/VBoxContainer" instance=ExtResource( 4 )]
+margin_top = 79.0
+margin_right = 342.0
+margin_bottom = 150.0
+text = "Main Screen"
+next_screen_path = "res://Screens/MainScreen.tscn"
+
+[node name="QuitButton3" parent="PauseOverlay/VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 158.0
+margin_right = 342.0
+margin_bottom = 229.0
