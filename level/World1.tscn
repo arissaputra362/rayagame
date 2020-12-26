@@ -17,7 +17,7 @@
 position = Vector2( 691.437, -262.656 )
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
-layer = -100
+layer = -98
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer2"]
 anchor_left = 0.5
@@ -36,6 +36,7 @@ __meta__ = {
 }
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 128
 
 [node name="UserInterface" parent="CanvasLayer" instance=ExtResource( 7 )]
 

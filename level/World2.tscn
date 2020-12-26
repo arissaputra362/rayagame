@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://tile/pembatas.tres" type="TileSet" id=1]
 [ext_resource path="res://aktor/player/Player.tscn" type="PackedScene" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://object/Goa-Portal.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Screens/EndScreen.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Screens/UserInterface.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Resource/music/cave-sound.wav" type="AudioStream" id=11]
+[ext_resource path="res://Resource/music/Lost-Jungle_Looping.wav" type="AudioStream" id=12]
 
 [node name="World2" type="Node2D"]
 
@@ -28,6 +30,7 @@ __meta__ = {
 }
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
+layer = 128
 
 [node name="UserInterface" parent="CanvasLayer2" instance=ExtResource( 10 )]
 
@@ -287,3 +290,13 @@ scale = Vector2( 0.15625, 0.15625 )
 position = Vector2( 3986.3, 570.364 )
 scale = Vector2( 0.216318, 0.216318 )
 next_scene = ExtResource( 9 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+volume_db = -13.938
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = 7.505
+autoplay = true

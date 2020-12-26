@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/cave-sound.wav-8076449c280c7e84d62074e2b7127003.sample"
+
+[deps]
+
+source_file="res://Resource/music/cave-sound.wav"
+dest_files=[ "res://.import/cave-sound.wav-8076449c280c7e84d62074e2b7127003.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
