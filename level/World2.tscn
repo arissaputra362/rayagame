@@ -10,7 +10,7 @@
 [ext_resource path="res://object/Goa-Portal.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Screens/EndScreen.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Screens/UserInterface.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Resource/music/cave-sound.wav" type="AudioStream" id=11]
+[ext_resource path="res://Resource/music/cavern sound .wav" type="AudioStream" id=11]
 [ext_resource path="res://Resource/music/Lost-Jungle_Looping.wav" type="AudioStream" id=12]
 
 [node name="World2" type="Node2D"]

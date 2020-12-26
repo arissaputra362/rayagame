@@ -21,7 +21,6 @@ var health = 3
 var hurt_score = 0
 var is_in_knockback = false
 var is_passed_out = false
-var loncat = false
 
 func _ready():
 	body = get_node("Body")
@@ -68,14 +67,6 @@ func _process(delta):
 	#released
 	elif Input.is_action_just_released("right") or Input.is_action_just_released("left"):
 		musicNode.stop()
-	
-	elif Input.is_action_just_pressed("jump") and loncat == false:
-		musicNode.stop()
-		loncat = true
-	
-	elif di_tanah() and loncat == true:
-		musicNode.play()
-		loncat = false
 	
 func _physics_process(delta):
 	grafitasi()		
