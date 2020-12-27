@@ -44,11 +44,13 @@ layer = 128
 position = Vector2( -352.963, 504.497 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
 stream = ExtResource( 6 )
 volume_db = -13.938
 autoplay = true
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
 stream = ExtResource( 9 )
 volume_db = -5.361
 autoplay = true

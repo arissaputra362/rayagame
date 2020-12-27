@@ -292,11 +292,13 @@ scale = Vector2( 0.216318, 0.216318 )
 next_scene = ExtResource( 9 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
 stream = ExtResource( 12 )
 volume_db = -13.938
 autoplay = true
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
 stream = ExtResource( 11 )
 volume_db = 7.505
 autoplay = true

@@ -22,6 +22,11 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 12 ), ExtResource( 9 ) ],
+"loop": false,
+"name": "lompat",
+"speed": 7.1
+}, {
 "frames": [ ExtResource( 1 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 6 ), ExtResource( 13 ) ],
 "loop": true,
 "name": "lari",
@@ -31,11 +36,6 @@ animations = [ {
 "loop": true,
 "name": "diam",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 12 ), ExtResource( 9 ) ],
-"loop": false,
-"name": "lompat",
-"speed": 7.1
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
