@@ -287,7 +287,7 @@ position = Vector2( -1010.56, -185.98 )
 scale = Vector2( 0.15625, 0.15625 )
 
 [node name="Goa-Portal" parent="." instance=ExtResource( 8 )]
-position = Vector2( 3986.3, 570.364 )
+position = Vector2( 3984.83, 576.688 )
 scale = Vector2( 0.216318, 0.216318 )
 next_scene = ExtResource( 9 )
 
